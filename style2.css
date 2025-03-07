@@ -1,0 +1,414 @@
+:root {
+    --primary: #7B61FF;
+    --secondary: #FF4D8F;
+    --accent: #00FF88;
+    --bg: #0A0A1A;
+    --glass: rgba(255, 255, 255, 0.05);
+    --text: rgba(255, 255, 255, 0.95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.concurs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.nft_us {
+    margin-bottom: 10px;
+}
+
+.nft_name-item {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.nft_name-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nft_name-item:hover::after {
+    transform: scaleX(1);
+}
+
+.about_concurs {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.about_concurs-text {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+.concurs_text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contest_results {
+    background: var(--glass);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 3rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.contest_results-title {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.contest_results-content {
+    font-size: 1.1rem;
+}
+
+.contest_results-content ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.contest_results-content li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.contest_results-content li::before {
+    content: '•';
+    color: var(--accent);
+    position: absolute;
+    left: -1rem;
+}
+
+.contest_results-note {
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+.concurs_pobeda {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 3rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.concurs_result-date {
+    text-align: center;
+}
+
+.concurs_result-date-item {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.concurs_result-date__item {
+    font-size: 1.2rem;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.concurs_result-date__item a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.concurs_result-date__item a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.countdown-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    min-width: 80px;
+    text-align: center;
+}
+
+.countdown-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.concurs_pravs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.concurs_pravs-title {
+    text-align: center;
+    max-width: 600px;
+}
+
+.concurs_pravs-title a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.concurs_pravs-title a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.pepe_title {
+    font-size: 1.8rem;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pepe_gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pepe_gallery-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pepe_gallery-item {
+    flex: 1;
+    max-width: calc(25% - 15px);
+}
+
+.pepe_gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pepe_gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.photo-upload-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.username-input-section {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.username-input-section input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    margin-right: 1rem;
+    width: 300px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text);
+}
+
+.username-input-section input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.username-input-section .btn,
+#takePhotoBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.username-input-section .btn:hover,
+#takePhotoBtn:hover {
+    background-color: var(--secondary);
+    opacity: 0.9;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.status {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .pepe_gallery-item {
+        max-width: calc(33.33% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .nft_name-item {
+        font-size: 2rem;
+    }
+
+    .about_concurs-text,
+    .contest_results-title {
+        font-size: 1.8rem;
+    }
+
+    .concurs_text,
+    .contest_results-content,
+    .concurs_result-date__item {
+        font-size: 1rem;
+    }
+
+    .concurs_result-date-item {
+        font-size: 1.5rem;
+    }
+
+    .pepe_title {
+        font-size: 1.5rem;
+    }
+
+    .pepe_gallery-item {
+        max-width: calc(50% - 0.5rem);
+    }
+
+    .username-input-section input,
+    .username-input-section .btn,
+    #takePhotoBtn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .countdown-item {
+        min-width: 60px;
+        padding: 0.5rem;
+    }
+
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+
+    .countdown-label {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .nft_name-item {
+        font-size: 1.8rem;
+    }
+
+    .about_concurs-text,
+    .contest_results-title,
+    .concurs_result-date-item {
+        font-size: 1.5rem;
+    }
+
+    .pepe_title {
+        font-size: 1.3rem;
+    }
+
+    .pepe_gallery-item {
+        max-width: 100%;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+    }
+
+    .countdown-item {
+        min-width: calc(50% - 0.5rem);
+        margin-bottom: 0.5rem;
+    }
+}

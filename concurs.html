@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What about Concurs?</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="concurs">
+            <div class="nft_us">
+                <h2 class="nft_name">
+                    <a href="index.html" class="nft_name-item">NFT COLLECTION</a>
+                </h2>
+            </div>
+        </header>
+        <main class="main">
+            <div class="about_concurs">
+                <h2 class="about_concurs-text">Что это за конкурс?</h2>
+                <div class="about_concurs-text_item">
+                    <p class="concurs_text">Мы рады предоставить вам возможность поучаствовать в нашем уникальном
+                        NFT-конкурсе. Просто пришлите нам фото любого предмета, который вы считаете особенным. Наша
+                        AI-система проанализирует ваше фото и определит его уникальность. Самые оригинальные и
+                        креативные работы будут преобразованы в эксклюзивные NFT!</p>
+                </div>
+            </div>
+
+            <div class="contest_results">
+                <h2 class="contest_results-title">Итоги конкурса</h2>
+                <div class="contest_results-content">
+                    <p>Итоги нашего NFT-конкурса будут подведены 13 марта 2025 года. Победители будут определены в
+                        следующих категориях:</p>
+                    <ul>
+                        <li>Гран-при: Самое уникальное и креативное фото</li>
+                        <li>Выбор сообщества: Фото, набравшее наибольшее количество голосов</li>
+                        <li>Выбор AI: Фото, получившее наивысшую оценку нашей системы искусственного интеллекта</li>
+                        <li>Приз за оригинальность: Самая необычная идея</li>
+                        <li>Приз зрительских симпатий: 5 работ, набравших наибольшее количество лайков</li>
+                    </ul>
+                    <p>Все победители получат свои работы в виде уникальных NFT, а также дополнительные призы из нашей
+                        коллекции редких токенов PEPE!</p>
+                    <p class="contest_results-note">Результаты конкурса будут опубликованы на этой странице и в нашем <a
+                            href="https://t.me/GID_NFT">Telegram-канале</a>. Следите за обновлениями!</p>
+                </div>
+            </div>
+            <div class="concurs_pobeda">
+                <div class="concurs_result-date">
+                    <h2 class="concurs_result-date-item">Система принятия фото закроется 13 марта в 00:00</h2>
+                    <p class="concurs_result-date__item">Сразу после этого, наш бот начнет выбирать лучшие фотографии, 
+                        итоги будут подведены
+                        13 марта в 12:00 в <a href="https://t.me/GID_NFT">нашем Telegram-каналe</a></p>
+                    <p class="concurs_result-date__item">До закрытия принятия фотографий осталось:</p>
+                    <div id="countdown" class="countdown"></div>
+                </div>
+            </div>
+            <div class="concurs_pravs">
+                <div class="concurs_pravs-container">
+                    <p class="concurs_pravs-title">
+                        <a
+                            href="https://getgems.io/collection/EQBG-g6ahkAUGWpefWbx-D_9sQ8oWbvy6puuq78U2c4NUDFS?utm_source=homepage&utm_medium=top_collections&utm_campaign=collection_overview">
+                            Oзнакомьтесь со списком NFT подарков PEPE
+                        </a>
+                    </p>
+                </div>
+                <h1 class="pepe_title">Малая часть подарков, которые вы можете получить:</h1>
+                <div class="pepe_gallery">
+                    <div class="pepe_gallery-row">
+                        <div class="pepe_gallery-item">
+                            <img src="pepe1.jpg" alt="pepe">
+                        </div>
+                        <div class="pepe_gallery-item">
+                            <img src="pepe2.webp" alt="pepe">
+                        </div>
+                        <div class="pepe_gallery-item">
+                            <img src="pepe3.webp" alt="pepe">
+                        </div>
+                        <div class="pepe_gallery-item">
+                            <img src="pepe4.jpg" alt="pepe">
+                        </div>
+                    </div>
+                    <div class="pepe_gallery-row">
+                        <div class="pepe_gallery-item">
+                            <img src="pepe5.jpg" alt="pepe">
+                        </div>
+                        <div class="pepe_gallery-item">
+                            <img src="pepe6.webp" alt="pepe">
+                        </div>
+                        <div class="pepe_gallery-item">
+                            <img src="pepe7.jpg" alt="pepe">
+                        </div>
+                        <div class="pepe_gallery-item">
+                            <img src="pepe8.jpg" alt="pepe">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-upload-section">
+                    <div class="username-input-section">
+                        <input type="text" id="usernameInput" placeholder="Введите ваш @username Telegram">
+                        <button id="submitUsernameBtn" class="btn">Отправить</button>
+                        <div id="usernameStatusMessage" class="status"></div>
+                    </div>
+                    <h2 class="section-title">Отправить фото</h2>
+                    <button id="takePhotoBtn" class="btn">Прислать фото</button>
+                    <div id="statusMessage" class="status"></div>
+                </div>
+        </main>
+        <footer>
+            <p class="copyright">&copy; 2025 NFT Collection. Все права защищены.</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="username-submit.js"></script>
+</body>
+
+</html>
